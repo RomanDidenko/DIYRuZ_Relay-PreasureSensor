@@ -1,0 +1,18 @@
+Board type: CC2530 + CC2592
+Device type: Router
+ Transmit enable (TXEN): P12Receive enable (RXEN), P14
+Model ID: 1ch.curr.preasur
+Update firmware's timestamp : 2021-09-26
+Enable watchdog timer: Yes
+Status LED: P15, Joining or errors
+Set default reporting interval (s): 3
+
+Output pins:
+P00: Output 1, ACS712,ACS758 (current) (Type: ACS712: 5 A (+/-), Frequency (Hz): 50, Voltage (V): 220, Monitor output: 2)
+P12: Output 2, Bistable relay On, Pull-up (Impulse (ms): 100, Restore after power off: On)
+P14: Output 3, Bistable relay Off, Pull-up (Impulse (ms): 100)
+P06: Output 4, ADC (accurate, max 1.15V) (Scale factor: 1)
+P17: Output 5, Internal temperature
+
+Input pins:
+P13: Input 2, GPIO, Pull-up, Link to out 2
