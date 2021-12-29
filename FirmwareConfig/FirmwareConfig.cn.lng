@@ -17,8 +17,11 @@ CN:>语(&L)
 EN:>16 channels
 CN:>16通道
 
-EN:>1st: P13 or P16%0D%0A2nd: P10 or P20%0D%0A3rd: P14 or P17%0D%0A4th: P11 or P23
-CN:>第一个：P13 或 P16%0D%0A第二：P10 或 P20%0D%0A第三名：P14 或 P17%0D%0A第四名：P11 或 P23
+EN:>1st: P13 or P16%0D%0A2nd: P10 or P20%0D%0A3rd: P14 or P17%0D%0A4th: P11 or P23EN:>1st: P13 or P16%0D%0A2nd: P10 or P20%0D%0A3rd: P14 or P17%0D%0A4th: P11 or P23%0D%0A5th (in the premium version): P03, P04, P05 or P06
+CN:>第一个：P13 或 P16%0D%0A第二：P10 或 P20%0D%0A第三名：P14 或 P17%0D%0A第四名：P11 或 P23%0D%0A第 5 个（高级版）：P03、P04、P05 或 P06
+
+EN:>Hardware PWM with low frequencies is available on the pins P03, P04, P05, or P06, and it is incompatible with UART.
+CN:>P03、P04、P05 或 P06 引脚提供低频硬件 PWM，与 UART 不兼容。
 
 EN:>A
 CN:>安培
@@ -398,8 +401,8 @@ CN:>成功完成。
 EN:>Switch
 CN:>转变
 
-EN:>Switch|Limit switch
-CN:>转变|限位开关
+EN:>Switch|Limit switch|Interlock|Interlock inverted
+CN:>转变|限位开关|互锁|互锁倒置
 
 EN:>The chip with an amplifier. High power consumption.
 CN:>带有放大器的芯片。高功耗。

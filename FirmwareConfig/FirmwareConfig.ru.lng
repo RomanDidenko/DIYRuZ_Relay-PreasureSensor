@@ -27,7 +27,7 @@ EN:>CC2530
 RU:>CC2530
 
 EN:>CC2530 (without external oscillator, like CC2531 dongle or Sonoff BasicZBR3)
-RU:>CC2530 (без внешнего генератора, типа стика СС2531 или Sonoff BasicZBR3)
+RU:>CC2530 (без внешнего резонатора, типа стика СС2531 или Sonoff BasicZBR3)
 
 EN:>CC2530 + CC2590
 RU:>CC2530 + CC2590
@@ -42,7 +42,7 @@ EN:>CC2530 + RFX2401 (config control pins!!!)
 RU:>CC2530 + RFX2401 (настройте контакты управления!!!)
 
 EN:>CC2530 + RFX2401 (without external oscillator, config control pins!!!)
-RU:>CC2530 + RFX2401 (без внешнего генератора, настройте контакты управления!!!)
+RU:>CC2530 + RFX2401 (без внешнего резонатора, настройте контакты управления!!!)
 
 EN:>Default reporting interval (s)
 RU:>Интервал отправки отчетов по-умолчанию (сек)
@@ -383,8 +383,8 @@ RU:>Успешно завершено.
 EN:>Switch
 RU:>Переключатель
 
-EN:>Switch|Limit switch
-RU:>Переключатель|Переключатель ограничения
+EN:>Switch|Limit switch|Interlock|Interlock inverted
+RU:>Переключатель|Переключатель ограничения|Взаимоблокировка|Инверсная взаимоблокировка 
 
 EN:>The chip with an amplifier. High power consumption.
 RU:>Чип с усилителем. Высокое потребление энергии.
@@ -465,7 +465,7 @@ EN:>Unlinked
 RU:>Не связан
 
 EN:>Usually, the selected pin is used for an external oscillator 32 KHz.
-RU:>Обычно, выбранный контакт используется для внешнего генератора 32 кГц.
+RU:>Обычно, выбранный контакт используется для внешнего резонатора 32 кГц.
 
 EN:>Usually, the selected pin is used for PA control.
 RU:>Обычно, выбранный контакт используется для управления усилителем.
@@ -488,8 +488,11 @@ RU:>Да
 EN:>You can add up to four hardware PWM to the firmware.%0D%0AHardware PWM is available on the following pins:
 RU:>Вы можете добавить до 4х аппаратных ШИМ в прошивке.%0D%0AАппаратный ШИМ доступен на следующих контактах:
 
-EN:>1st: P13 or P16%0D%0A2nd: P10 or P20%0D%0A3rd: P14 or P17%0D%0A4th: P11 or P23
-RU:>1: P13 или P16%0D%0A2: P10 или P20%0D%0A3: P14 или P17%0D%0A4: P11 или P23
+EN:>1st: P13 or P16%0D%0A2nd: P10 or P20%0D%0A3rd: P14 or P17%0D%0A4th: P11 or P23%0D%0A5th (in the premium version): P03, P04, P05 or P06
+RU:>1: P13 или P16%0D%0A2: P10 или P20%0D%0A3: P14 или P17%0D%0A4: P11 или P23%0D%0A5 (в премиум версии): P03, P04, P05 или P06
+
+EN:>Hardware PWM with low frequencies is available on the pins P03, P04, P05, or P06, and it is incompatible with UART.
+RU:>Аппаратный ШИМ с низкими частотами доступен на пинах P03, P04, P05 или P06, и не совместим с UART.
 
 EN:>You cannot add more than %d sensors.
 RU:>Вы не можете добавить больше чем %d сенсоров.
@@ -589,4 +592,38 @@ RU:>Включить SBL
 
 EN:>SBL mode activation pin
 RU:>Пин активации режима SBL
+
+EN:>Browse
+RU:>Выбрать
+
+EN:>Byte
+RU:>Байт
+
+EN:>Changes level
+RU:>Изменение уровня
+
+EN:>Incompatible with PSM.
+RU:>Не совместимо с РСЭ
+
+EN:>Isolated
+RU:>Изолированный
+
+EN:>Linked input
+RU:>Привязанный вход
+
+EN:>Non-isonaled
+RU:>Неизолированный
+
+EN:>The internal pull-up or pull-down resistor secures high power consumption. Please, consider using an external pull-up 5 MOhm.
+RU:>Внутренний резистор подтяжки гарантирует высокий расход энергии. Пожалуйста, рассмотрите возможность использования внешней подтяжки 5 МOм.
+
+EN:>Transition time
+RU:>Время перехода
+
+EN:>Would you like to use an embedded image without external files (data URI encoding)?
+RU:>Вы хотите встроить картинку в конвертер (закодировать в формат data URI)?
+
+EN:>You can have only one switch on a port (P0x, P1x, or P2x). For example, P01, P11, or P20.
+RU:>Вы можете иметь только один переключатель на порту (P0x, P1x или P2x). Например, P01, P11 или P20.
+
 
