@@ -125,7 +125,7 @@ const custom_converters = {
                 valueToSet = 'state;';
             }
 
-            meta.logger.error(valueToSet);
+            meta.logger.info(valueToSet);
 
             const payload = {14: {value: valueToSet, type: 0x42}};
 
@@ -151,7 +151,7 @@ const device = {
     exposes: [
       e.current().withAccess(ea.STATE_SET).withEndpoint('l1'),
       e.switch().withEndpoint('l2'),
-      e.switch().withEndpoint('l7').withDescription('RESTART'),
+      e.switch().withEndpoint('l7').withDescription('RESTART: switch off and then on to reset Prob module'),
       e.voltage().withAccess(ea.STATE).withValueMin(0).withValueMax(1.2).withEndpoint('l4'),
       e.cpu_temperature().withProperty('temperature').withEndpoint('l5'),
       exposes.numeric('preassure_adc', ea.STATE).withDescription(`Preassure adc value: (0 - 1024) ~ (0V - 3.3V)`),
@@ -161,7 +161,7 @@ const device = {
       exposes.numeric(averageOnItemsDataType, ea.ALL).withDescription(`Number of probes to take average on`).withValueMin(minAverageOnItems).withValueMax(1000000),
       exposes.numeric(valueDeltaToForceReportDataType, ea.ALL).withDescription(`Value delta to force report`).withValueMin(minValueDeltaToForceReport).withValueMax(10000),
       exposes.text(uptimeDataType, ea.Get).withDescription(`Uptime of the probe module`),
-      e.voltage().withAccess(ea.STATE).withEndpoint('l8').withDescription(`Source Volatge`).withUnit('V'),
+      //e.voltage().withAccess(ea.STATE).withEndpoint('l8').withDescription(`Source Volatge`).withUnit('V'),
 ],
     meta: {
         multiEndpoint: true,
@@ -169,7 +169,7 @@ const device = {
     },
     endpoint: (device) => {
         return {
-            l1: 1, l2: 2, l4: 4, l5: 5, l6: 6, l7: 7, l8: 8 //action: 1, 
+            l1: 1, l2: 2, l4: 4, l5: 5, l6: 6, l7: 7//, l8: 8 //action: 1, 
         };
     },
     
