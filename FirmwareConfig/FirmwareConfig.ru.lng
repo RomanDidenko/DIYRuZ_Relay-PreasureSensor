@@ -23,26 +23,14 @@ RU:>Тип платы
 EN:>Buy me a coffee
 RU:>Купите автору кофе
 
-EN:>CC2530
-RU:>CC2530
+EN:>without external oscillator
+RU:>без внешнего резонатора
 
-EN:>CC2530 (without external oscillator, like CC2531 dongle or Sonoff BasicZBR3)
-RU:>CC2530 (без внешнего резонатора, типа стика СС2531 или Sonoff BasicZBR3)
+EN:>like CC2531 dongle or Sonoff BasicZBR3
+RU:>типа стика СС2531 или Sonoff BasicZBR3
 
-EN:>CC2530 + CC2590
-RU:>CC2530 + CC2590
-
-EN:>CC2530 + CC2591
-RU:>CC2530 + CC2591
-
-EN:>CC2530 + CC2592
-RU:>CC2530 + CC2592
-
-EN:>CC2530 + RFX2401 (config control pins!!!)
-RU:>CC2530 + RFX2401 (настройте контакты управления!!!)
-
-EN:>CC2530 + RFX2401 (without external oscillator, config control pins!!!)
-RU:>CC2530 + RFX2401 (без внешнего резонатора, настройте контакты управления!!!)
+EN:>configure PA control pins!!!
+RU:>настройте пины управления усилителем!!!
 
 EN:>Default reporting interval (s)
 RU:>Интервал отправки отчетов по-умолчанию (сек)
@@ -137,8 +125,8 @@ RU:>Роутер
 EN:>Save
 RU:>Сохранить
 
-EN:>Save custom converter for Z2M
-RU:>Создать внешний конвертер для Z2M
+EN:>Save custom converter
+RU:>Создать внешний конвертер
 
 EN:>Save settings to a file
 RU:>Сохранить настройки в файл
@@ -264,7 +252,10 @@ EN:>Interval
 RU:>Интервал
 
 EN:>JS files
-RU:>Файл JS
+RU:>Файлы JS
+
+EN:>JSON files
+RU:>Файлы JSON
 
 EN:>kHz
 RU:>кГц
@@ -467,8 +458,8 @@ RU:>Не связан
 EN:>Usually, the selected pin is used for an external oscillator 32 KHz.
 RU:>Обычно, выбранный контакт используется для внешнего резонатора 32 кГц.
 
-EN:>Usually, the selected pin is used for PA control.
-RU:>Обычно, выбранный контакт используется для управления усилителем.
+EN:>Usually, the selected pin is used by a built-in power amplifier control.
+RU:>Обычно, выбранный контакт используется для управления встроенным усилителем.
 
 EN:>V
 RU:>В
@@ -674,9 +665,6 @@ RU:>Команда биндинга
 EN:>Enable high PA
 RU:>Повысить мощность усилителя
 
-EN:>Generic|Light: white|Light: red|Light: green|Light: blue
-RU:>Универсальный|Цвет: белый|Цвет: красный|Цвет: зеленый|Цвет: голубой
-
 EN:>LED
 RU:>Светодиоды
 
@@ -695,6 +683,12 @@ RU:>LED лента: яркость
 EN:>LED strip pattern
 RU:>LED лента: эффекты
 
+EN:>LED strip remote configuration
+RU:>LED лента: удаленная настройка
+
+EN:>LED strip pattern shortcut
+RU:>LED лента: быстрый вызов эффекта
+
 EN:>Regular PTVO firmware
 RU:>Обычная прошивка PTVO
 
@@ -706,4 +700,220 @@ RU:>Вы не включили функцию загрузки прошивки через UART (SBL). У вас потом не бу
 
 EN:>Rotary encoder
 RU:>Угловой кодер
+
+EN:>You cannot add more than 5 PWM in the Premium version.
+RU:>Вы не можете добавить больше 5 PWM в премиальной версии.
+
+EN:>Pattern
+RU:>Эффект
+
+EN:>Color
+RU:>Цвет
+
+EN:>don't use
+RU:>не использовать
+
+EN:>Initial state
+RU:>Начальное состояние
+
+EN:>Get key usage info
+RU:>Посмотреть информацию об использовании ключа
+
+EN:>Invalid value
+RU:>Неверное значение
+
+EN:>Remaining devices
+RU:>Оставшиеся устройства
+
+EN:>Used for IEEE
+RU:>Использовано для IEEE
+
+EN:>Binary files
+RU:>Двоичные файлы
+
+EN:>Disable OTA
+RU:>Отключить OTA
+
+EN:>External SPI flash
+RU:>Внешняя SPI флешка
+
+EN:>Failed.
+RU:>Не удалось.
+
+EN:>OTA
+RU:>OTA
+
+EN:>OTA binary files
+RU:>Двоичные файлы OTA
+
+EN:>Pin
+RU:>Пин
+
+EN:>Save firmware upgrade
+RU:>Сохранить обновление прошивки
+
+EN:>Save configuration update
+RU:>Сохранить обновления конфигурации
+
+EN:>SBL
+RU:>SBL
+
+EN:>The Over-the-Air (OTA) firmware update feature provides a standard mechanism for wirelessly upgrading a Zigbee device’s firmware
+RU:>Функция обновления по воздуху (Over-the-Air, OTA) предоставляет стандартный механизм обновления прошивки Zigbee устройств без проводов
+
+EN:>The Serial bootloader feature allows you to flash firmware via UART without the special flash programmer
+RU:>Функция загрузчика через последовательный порт (Serial bootloader, BSL) позволяет вам заливать прошивку через UART без специального программатора
+
+EN:>This feature is not available on a CC253x.
+RU:>Эта возможность не доступна на CC253x.
+
+EN:>Unable to make the destination file at step #
+RU:>Не удалось создать файл на шаге №
+
+EN:>RGB order
+RU:>Порядок RGB
+
+EN:>Altitude
+RU:>Высота
+
+EN:>Auto-calibration
+RU:>Автокалибровка
+
+EN:>meters
+RU:>метры
+
+EN:>Generic
+RU:>Универсальный
+
+EN:>Light
+RU:>Цвет
+
+EN:>Red
+RU:>Красный
+
+EN:>Green
+RU:>Зеленый
+
+EN:>Blue
+RU:>Голубой
+
+EN:>White
+RU:>Белый
+
+EN:>White (warm)
+RU:>Белый (теплый)
+
+EN:>Sensitivity
+RU:>Чувствительность
+
+EN:>Maximum
+RU:>Максимум
+
+EN:>Minimum
+RU:>Минимум
+
+EN:>Change to state after interval
+RU:>Изменить состояние выхода через время
+
+EN:>Activate SBL in exiting HEX
+RU:>Включить SBL в существующем HEX
+
+EN:>Temperature sensor
+RU:>Датчик температуры
+
+EN:>Temperature sensor (1-wire)
+RU:>Датчик температуры (1-проводной)
+
+EN:>Ohm
+RU:>ом
+
+EN:>Your configuration has the following warnings.
+RU:>Ваша конфигурация имеет следующие замечания.
+
+EN:>You may ignore this error and continue.
+RU:>Вы можете проигнорировать это сообщение и продолжить.
+
+EN:>Your configuration is too large for this device. Please consider removing some functions.
+RU:>Ваша конфигурация слишком большая для этого устройства. Пожалуйста, рассмотрите возможность удаления некоторых функций.
+
+EN:>1-wire
+RU:>1х-проводн.
+
+EN:>2-wire
+RU:>2х-проводн.
+
+EN:>3-wire
+RU:>3х-проводн.
+
+EN:>Reference value
+RU:>Эталонное значение
+
+EN:>UART sensor
+RU:>Сенсор (последовательный порт)
+
+EN:>Level control
+RU:>Контроль уровня
+
+EN:>Analog value
+RU:>Аналоговое значение
+
+EN:>Units
+RU:>Ед. измерения
+
+EN:>Button clicks
+RU:>Нажатия кнопки
+
+EN:>Reporting|Read|Write|Read/Write
+RU:>Отчеты|Чтение|Запись|Чтение/Запись
+
+EN:>Auto-detect
+RU:>Автопоиск
+
+EN:>Auto-detect
+RU:>Автопоиск
+
+EN:>Multiple on bus
+RU:>Несколько на шине
+
+EN:>Single
+RU:>Один
+
+EN:>Fixed ID
+RU:>Фикс. идентификатор
+
+EN:>Soil moisture sensor
+RU:>Датчик влажности почвы
+
+EN:>Python files
+RU:>Файлы Python
+
+EN:>Divisor
+RU:>Делитель
+
+EN:>Ultrasonic distance sensor
+RU:>Ультразвуковой датчик дистанции
+
+EN:>Keypad
+RU:>Матричная клавиатура
+
+EN:>Keypad row
+RU:>Ряд клавиатуры
+
+EN:>Keypad column
+RU:>Столбец клавиатуры
+
+EN:>Dimmer
+RU:>Диммер
+
+EN:>Hue
+RU:>Оттенок
+
+EN:>Saturation
+RU:>Насыщенность
+
+EN:>Color temperature
+RU:>Цветовая температура
+
+EN:>Intruder Alarm Systems (IAS)
+RU:>Системы тревоги (IAS)
 

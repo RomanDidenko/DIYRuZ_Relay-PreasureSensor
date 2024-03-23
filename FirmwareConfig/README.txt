@@ -2,6 +2,14 @@ This firmware allows you to create a device with a flexible configuration of inp
 
 The device with this firmware also works as a router.
 
+How to use
+=========================
+
+1. Launch the "FirmwareConfig.exe" utility.
+2. Configure the firmware for your chip, board, and needs. Optionally, you may click the "File - Read settings from a file" menu item and load settings from an existing preset in the "Presets" folder.
+3. Click the "Save" button and get the final HEX file. Note: some features may require the Premium version of this firmware.
+
+
 Options
 =========================
 
