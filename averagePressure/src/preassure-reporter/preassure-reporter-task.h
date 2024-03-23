@@ -21,7 +21,7 @@ void PreassureReporterTask_Callback();
 Task PreassureReporterTask(config.GetMinReportIntervalInMilliseconds(), TASK_FOREVER, &PreassureReporterTask_Callback);
 
 void StateReporterTask_Callback();
-Task StateReporterTask(0, TASK_ONCE, &StateReporterTask_Callback);
+Task StateReporterTask(500, TASK_ONCE, &StateReporterTask_Callback);
 
 Subscriber _3([]
               { config.OnChange([]

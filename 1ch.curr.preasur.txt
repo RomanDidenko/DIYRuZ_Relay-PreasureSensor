@@ -15,7 +15,7 @@ P06: Output 4, ADC (accurate, max 1.15V) (Scale factor: 1, Shift: 0)
 P17: Output 5, Internal temperature
 P02: Output 6, UART (Baud rate: 9600, Packet end: 0x00, Byte: 239)
 P20: Output 7, Bistable relay On, Pull-up (Impulse (ms): 500, Restore after power off: On)
-P32: Output 8, Source voltage
+P05: Output 8, Bistable relay Off, Pull-up (Impulse (ms): 500)
 
 Input pins:
 P13: Input 2, GPIO, Pull-up, Link to out 2

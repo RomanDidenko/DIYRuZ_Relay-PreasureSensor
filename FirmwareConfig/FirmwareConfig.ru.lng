@@ -110,7 +110,7 @@ RU:>Выход
 EN:>P12, P14
 RU:>P12, P14
 
-EN:>PA control
+EN:>Power amplifier control
 RU:>Управление усилителем
 
 EN:>Periodic (every 5 seconds)
@@ -410,7 +410,7 @@ RU:>Прошивка сохраняет состояние выхода в энергонезависимой памяти и восстанавли
 EN:>The firmware toggles the linked output when a switch state changes. The physical switch position may differ with the output state if you change it from a coordinator.
 RU:>Прошивка переключает состояние выхода при любом изменении состояния переключателя. Физическое состояние переключателя может не совпадать с состоянием выхода, если вы измените его с координатора.
 
-EN:>The following features do not work or have limited functionality in the power saving mode. Please, check your configuration.
+EN:>The following features do not work or have limited functionality in the power saving mode. Please check your configuration.
 RU:>Следующие возможности не работают или имеют ограничения в РСЭ. Пожалуйста, проверьте вашу конфигурацию.
 
 EN:>The input immediately controls the state of the corresponding output. Otherwise the input is independent.
@@ -614,7 +614,7 @@ RU:>Привязанный вход
 EN:>Non-isonaled
 RU:>Неизолированный
 
-EN:>The internal pull-up or pull-down resistor secures high power consumption. Please, consider using an external pull-up 5 MOhm.
+EN:>The internal pull-up or pull-down resistor secures high power consumption. Please consider using an external pull-up 5 MOhm.
 RU:>Внутренний резистор подтяжки гарантирует высокий расход энергии. Пожалуйста, рассмотрите возможность использования внешней подтяжки 5 МOм.
 
 EN:>Transition time
@@ -644,4 +644,66 @@ RU:>Не удалось активировать загрузчик через последовательный порт в сформированн
 EN:>This feature is not available on a CC253x router.
 RU:>Эта функция недоступна на CC253x в режиме роутера.
 
+EN:>Generic|Contact|Gas|Noise detected|Occupancy|Presence|Smoke|SOS|Tamper|Vibration|Water leak
+RU:>Универсальный|Контакт|Газ|Наличие помехи|Занято|Присутствие|Дым|SOS|Вмешательство|Вибрация|Протечка
+
+EN:>Role
+RU:>Роль
+
+EN:>Signal strength level (0-20)
+RU:>Сила сигнала (0-20)
+
+EN:>Down
+RU:>Вниз
+
+EN:>Recall scene
+RU:>Активация сцены
+
+EN:>RF signal level
+RU:>Сила сигнала
+
+EN:>Up
+RU:>Вверх
+
+EN:>With off
+RU:>С отключением
+
+EN:>Bind command
+RU:>Команда биндинга
+
+EN:>Enable high PA
+RU:>Повысить мощность усилителя
+
+EN:>Generic|Light: white|Light: red|Light: green|Light: blue
+RU:>Универсальный|Цвет: белый|Цвет: красный|Цвет: зеленый|Цвет: голубой
+
+EN:>LED
+RU:>Светодиоды
+
+EN:>LED count
+RU:>Кол-во светодиодов
+
+EN:>LED edition firmware
+RU:>Версия прошивки для LED
+
+EN:>LED strip
+RU:>LED лента
+
+EN:>LED strip brightness
+RU:>LED лента: яркость
+
+EN:>LED strip pattern
+RU:>LED лента: эффекты
+
+EN:>Regular PTVO firmware
+RU:>Обычная прошивка PTVO
+
+EN:>Select the firmware type
+RU:>Выберите тип прошивки
+
+EN:>You didn't activate the SBL feature in your firmware. You will not be able to reflash your chip later using UART.
+RU:>Вы не включили функцию загрузки прошивки через UART (SBL). У вас потом не будет возможности загрузить прошивку через последовательный порт.
+
+EN:>Rotary encoder
+RU:>Угловой кодер
 

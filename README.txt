@@ -7,9 +7,11 @@
   1. GND (right pin, in the middle of the board) - preasure sensor black wire
   2. +5v (middle pin) - preasure sensor red wire
   3. Preasure Signal (left pin, in the side of the board) - preasure sensor yellow wire
-3. J3/1 1 - +5V
+3.1 J3/1 1 - +5V
+3.2 J3/1 2 and 3 - UART (disconnect to flash ESP via USB)
 4. J4/1 2 - GND
 5. J4/1 1 - Preasure Signal
+6. J4/1 3 - ESP reset (bistable relay ON Signal, pin 2.0). Added manual switch as it impacts ESP connected to USB
 
 Voltage transformation:
     258.8 / 1348 = 0.192
