@@ -1,45 +1,53 @@
-#include "RunningAverage.h"
+#include <ESP8266WiFi.h>
 
-#define MinReportTimeInMilliseconds 1
-#define ValueDeltaToForceReport 1
+#include "src/config/config.h"
+#include "src/config-repository/config-repository.h"
 
-#define AverageBufferSize 15
-#define ProbeDelayInMilliseconds 10
+Config config;
 
-RunningAverage avePressure(AverageBufferSize);
+// tasks scheduler should be configured after config instantiation.
+#include "src/tasks-scheduler/tasks-scheduler.h"
 
-int samples = 0;
-int value;
+TasksScheduler tasksScheduler;
 
-int lastValue = -100;
-unsigned long lastTime = 0;
+int main()
+{
+  init();
+  setup();
 
-void setup() {
-  Serial.begin(9600);
+  for (;;)
+  {
+    loop();
 
-  avePressure.clear();
-
-   while (!Serial) {
-    ; // wait for serial port to connect. Needed for Native USB only
+    if (serialEventRun)
+    {
+      serialEventRun();
+    }
   }
 }
 
-void loop() {
-  value = analogRead(A0);
-  
-  avePressure.addValue(value);
-  
-  value = round(avePressure.getAverage());
+void setup()
+{
+  WiFi.mode(WIFI_OFF);
+  WiFi.forceSleepBegin();
 
-  if (millis() - lastTime > MinReportTimeInMilliseconds
-      || abs(value - lastValue) > ValueDeltaToForceReport)
+  Serial.begin(9600);
+  //Serial1.begin(9600);
+
+  while (!Serial)
   {
-    lastTime = millis();
-    lastValue = value;
-    
-    Serial.println(value);
+    ; // wait for serial port to connect. Needed for Native USB only
   }
 
-  // delay 10ms to let the ADC recover:
-  delay(ProbeDelayInMilliseconds);
+  ConfigData data = ConfigRepository::Load();
+  config.UpdateFrom(&data);
+
+  tasksScheduler.Setup();
+
+  //Println(&Serial, "Setup completed");
+}
+
+void loop()
+{
+  tasksScheduler.Loop();
 }

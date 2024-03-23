@@ -626,4 +626,22 @@ RU:>Вы хотите встроить картинку в конвертер (закодировать в формат data URI)?
 EN:>You can have only one switch on a port (P0x, P1x, or P2x). For example, P01, P11, or P20.
 RU:>Вы можете иметь только один переключатель на порту (P0x, P1x или P2x). Например, P01, P11 или P20.
 
+EN:>Shift
+RU:>Сдвиг
+
+EN:>Duration
+RU:>Длительность
+
+EN:>Cron scheduler
+RU:>Планировщик Cron
+
+EN:>RTC clock
+RU:>Часы реального времени
+
+EN:>Unable to activate SBL in the generated HEX file. Please contact the author.
+RU:>Не удалось активировать загрузчик через последовательный порт в сформированном HEX файле. Пожалуйста, свяжитесь с автором.
+
+EN:>This feature is not available on a CC253x router.
+RU:>Эта функция недоступна на CC253x в режиме роутера.
+
 

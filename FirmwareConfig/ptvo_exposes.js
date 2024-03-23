@@ -9,6 +9,8 @@ const tz = zigbeeHerdsmanConverters.toZigbeeConverters;
 const ptvo_switch = zigbeeHerdsmanConverters.findByDevice({modelID: 'ptvo.switch'});
 fz.legacy = ptvo_switch.meta.tuyaThermostatPreset;
 
+_converters_
+
 const device = {
     zigbeeModel: ['_model_'],
     model: '_model_',
